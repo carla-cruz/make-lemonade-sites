@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
 
+  http_basic_authenticate_with :name => "lemonadeLadies", :password => "weRock"
+
 def index
 end
 
