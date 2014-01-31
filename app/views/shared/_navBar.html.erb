@@ -11,7 +11,8 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li class="main active"><%= link_to 'Home', root_path, class: cp(root_path) %></li>
-				<li class="main"><%= link_to 'About', about_path, class: cp(about_path) %></li>
+        <li class="main"><%= link_to 'About', about_path, class: cp(about_path) %></li>
+				<li><a href="http://make-lemonade-sites-blog.herokuapp.com">Blog</a></li>
 				<li class="main"><%= link_to 'Policies', policies_path, class: cp(policies_path) %></li>
 				<li class="main"><%= link_to 'Portfolio', portfolio_path, class: cp(portfolio_path) %></li>
 				<li class="main"><%= link_to 'Services', services_path, class: cp(services_path) %></li>
@@ -23,24 +24,22 @@
 </div>
 <script>
 $(document).ready(function(){
-  if ((window.location.href).match(/home/)) {
-    $('li.main').removeClass('active');
-    $('li.main:nth-of-type(1)').addClass('active');
-  } else if ((window.location.href).match(/about/)) {
+  if ((window.location.href).match(/about/)) {
     $('li.main').removeClass('active');
     $('li.main:nth-of-type(2)').addClass('active');
+  } else if 
   } else if ((window.location.href).match(/policies/)) {
     $('li.main').removeClass('active');
-    $('li.main:nth-of-type(3)').addClass('active');
+    $('li.main:nth-of-type(4)').addClass('active');
   } else if ((window.location.href).match(/portfolio/)) {
     $('li.main').removeClass('active');
-    $('li.main:nth-of-type(4)').addClass('active');
+    $('li.main:nth-of-type(5)').addClass('active');
   } else if ((window.location.href).match(/services/)) {
     $('li.main').removeClass('active');
-    $('li.main:nth-of-type(5)').addClass('active');
+    $('li.main:nth-of-type(6)').addClass('active');
   } else if ((window.location.href).match(/contact/)) {
     $('li.main').removeClass('active');
-    $('li.main:nth-of-type(6)').addClass('active');
+    $('li.main:nth-of-type(7)').addClass('active');
   } 
 });
 </script>
