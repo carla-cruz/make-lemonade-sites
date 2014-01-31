@@ -24,10 +24,12 @@
 </div>
 <script>
 $(document).ready(function(){
-  if ((window.location.href).match(/about/)) {
+  if ((window.location.href).match(/home/)) {
     $('li.main').removeClass('active');
     $('li.main:nth-of-type(2)').addClass('active');
-  } else if 
+  } else if ((window.location.href).match(/about/)) {
+    $('li.main').removeClass('active');
+    $('li.main:nth-of-type(2)').addClass('active');
   } else if ((window.location.href).match(/policies/)) {
     $('li.main').removeClass('active');
     $('li.main:nth-of-type(4)').addClass('active');
